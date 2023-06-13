@@ -1,0 +1,110 @@
+{
+    "name": "spagreen/yoori",
+    "type": "project",
+    "description": "Yoori PWA eCommerce CMS.",
+    "authors": [
+        {
+            "name": "SpaGreen Creative",
+            "email": "info@spagreen.net"
+        }
+    ],
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "anandsiddharth/laravel-paytm-wallet": "^2.0",
+        "anhskohbo/no-captcha": "^3.4",
+        "brian2694/laravel-toastr": "^5.57",
+        "carlos-meneses/laravel-mpdf": "^2.1.8",
+        "cartalyst/sentinel": "^v5.1.0",
+        "fruitcake/laravel-cors": "^2.2.0",
+        "geo-sot/laravel-env-editor": "^1.1",
+        "guzzlehttp/guzzle": "^7.4.1",
+        "intervention/image": "^2.7.1",
+        "iyzico/iyzipay-php": "^2.0",
+        "joedixon/laravel-translation": "^1.1.2",
+        "kkiapay/kkiapay-php": "dev-master",
+        "laravel/framework": "^v8.83.2",
+        "laravel/sanctum": "^2.14.2",
+        "laravel/socialite": "^5.5.1",
+        "laravel/tinker": "^2.7.0",
+        "league/flysystem-aws-s3-v3": "^1.0.29",
+        "maatwebsite/excel": "^3.1",
+        "mcamara/laravel-localization": "^1.7.0",
+        "mercadopago/dx-php": "^2.4",
+        "mews/purifier": "^3.3",
+        "midtrans/midtrans-php": "^2.5",
+        "mollie/laravel-mollie": "^2.19",
+        "mpdf/mpdf": "*",
+        "nexmo/client": "^2.4",
+        "obydul/laraskrill": "^1.2",
+        "predis/predis": "^1.1",
+        "pusher/pusher-php-server": "^7.0",
+        "razorpay/razorpay": "^2.8.1",
+        "silviolleite/laravelpwa": "^2.0.3",
+        "stripe/stripe-php": "^v7.114.0",
+        "twilio/sdk": "^6.35.0",
+        "tymon/jwt-auth": "^1.0",
+        "unicodeveloper/laravel-paystack": "^1.0",
+        "xenon/nagad-api": "v1.9.1.6"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6.7",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Helpers/SettingHelper.php",
+            "app/Helpers/EmailHelper.php",
+            "app/Helpers/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,133 @@
+.h1head
+{
+    text-align: left;
+    text-transform:uppercase;
+    background-color: #F0F0F0;
+    color: #355681; 
+}
+.topdiv{
+    text-align: center;
+    background-color: #2B5F8E;
+    color: #FEFDF9; 
+    font-size:30px;
+    margin:0px;
+    padding-top: 2px;
+    border:1px solid;
+    height:40px;
+    font-family:  sans-serif, Verdana;
+    border-radius: 10px;
+}
+table {
+    width:100%;
+}
+table td{
+    width:50%;
+    padding-top:2px;
+    padding-left:10px;
+    border:0px solid;
+    vertical-align: top;
+}
+textarea{
+    border: 3px dotted #366B70;
+    background-color:#FBE9AC;
+	border-radius: 10px;
+	height: 400px;
+	width: 550px;
+    font-size:15px;
+    color:#366B70;
+}
+.indtd{
+border-left:1px solid;
+}
+
+#enabletxtarea{
+    background-color:#3A4F5E;
+    border: #2e6da4;
+  	font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+	font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    
+    border-radius: 4px;
+    line-height: 1.5;
+    text-decoration:none;
+    
+      /*Transition*/
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  margin:20px;
+}
+#enabletxtarea:hover{
+    background-color:#87A2B6;
+    border: #2e6da4;
+  	font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+	font-size: 15px;
+    color: #000;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    
+    border-radius: 4px;
+    line-height: 1.5;
+    text-decoration:none;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+.h1head
+{
+    text-align: left;
+    text-transform:uppercase;
+    background-color: #F0F0F0;
+    color: #355681; 
+    font-size:18px;
+}  
+textarea{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    color: green;
+    font-size:18px;
+}
+strong
+{
+    font-size:18px;
+}
+table td{
+    font-size:18px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+
+.h1head
+{
+    text-align: left;
+    text-transform:uppercase;
+    background-color: #F0F0F0;
+    color: #355681; 
+    font-size:18px;
+}  
+textarea{
+    width: 200px;
+    height: 250px;
+    border: 1px solid red;
+    color: green;
+    font-size:18px;
+}
+strong
+{
+    font-size:18px;
+}
+table td{
+    font-size:18px;
+}
+}    
